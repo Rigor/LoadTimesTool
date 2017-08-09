@@ -24,7 +24,7 @@ You can select multiple load times simultaneously, with each load time type popu
 
 	 Select the Check ID for the check you want to pull data for (Column A), and copy it into the sidebar where prompted. Then check the      checkboxes for the load times you want to pull data for. Finally, choose a timeframe for the data--if you select Custom, you will be    asked to select a From date and a To date. 
    
-   NOTE: Load data is rolled-up based on timeframe
+   NOTE: Load data is rolled-up based on timeframe:
      0-24 hours: every run is returned;
      24 hours - 3 days: hourly rollups;
      Over 3 days: daily rollups
