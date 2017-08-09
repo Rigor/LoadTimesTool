@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+    #form2 {
+    display: <?=message?>;
+    }
+    #deleteButton{
+     position:absolute;
+     bottom: 5%;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php" name="form" id="form">
+     <div id="form1">
+       Enter your API Key. Don't know where to find it? <a href="https://monitoring.rigor.com\/settings"> Click Here </a> <br>
+       <br>
+       <input type="text" name="apikey"><br>
+       <br>
+      <!-- run getCheckDetails function when button clicked -->
+       <input type="button" value="RUN" onclick="formSubmit()" /> <br>
+       <br>
+       <br>
+     </div>
+   
+   <!-- hidden until first section complete -->
+     <div id="form2">
+       Enter the ID of the test you would like to pull data for (Column A) <br>
+       <br>
+       <input type="text" name="testid"> <br>
+       <br>
+       Select data: <br>
+       <input type="checkbox" id="servertime" name="servertime" value="true"> Server Time <br>
+       <input type="checkbox" id="startrendertime" name="startrendertime" value="true"> Start Render Time <br>
+       <input type="checkbox" id="domloadtime" name="domloadtime" value="true"> DOM Load Time <br>
+       <input type="checkbox" id="onloadtime" name="onloadtime" value="true"> On Load Time <br>
+       <input type="checkbox" id="visuallycompletetime" name="visuallycompletetime" value="true"> Visually Complete Time <br>
+       <input type="checkbox" id="fullyloadedtime" name="fullyloadedtime" value="true"> Fully Loaded Time <br>
+       <input type="checkbox" id="speedindex" name="speedindex" value="true"> Speed Index <br>       
+                     
+                           
+       <br>       
+       Select timeframe for data <br>
+       <select name="timeframe" onchange="showDiv(this)">
+        <option value="last_hour">Last Hour</option>
+        <option value="last_4_hours">Last 4 Hours</option>
+        <option value="last_8_hours">Last 8 Hours</option>
+        <option value="last_12_hours">Last 12 Hours</option>
+        <option value="last_24_hours">Last 24 Hours</option>
+        <option value="last_week">Last Week</option>
+        <option value="custom">Custom</option>
+       </select> <br>
+       <br>
+     <!-- hidden unless "custom" timeframe selected" -->
+      <div id="form3" style="display: none;">
+       From <input type="date" name="fromDate"> <br>
+       To <input type="date" name="toDate"> 
+       <br>
+       <br>
+      </div>
+      <input type="button" value="RUN" onclick="dataPull()" />
+    </div>
+     <input id="deleteButton" type="button" value="Delete Reports" onclick="deleteSheets()" />
+    </form>
+  </body>
+  
+  <script type="text/javascript">
+     function formSubmit() {
+      function onSuccessfunction2(test){
+       if(test != 'end'){
+        document.getElementById('form2').style.display = 'block';
+       }
+      }
+      google.script.run.withSuccessHandler(onSuccessfunction2).getCheckDetails(document.forms[0]);  
+     }   
+     
+     function showDiv(elem){
+      if(elem.value == 'custom'){
+      document.getElementById('form3').style.display = "block";
+      }else {
+      document.getElementById('form3').style.display = "none";
+      }
+     }
+
+     //Get run data based on checkboxes
+     function dataPull(){
+      function onSuccessfunction(test){
+       if(test != 'end'){
+        google.script.run.getFormData(document.forms[0]); 
+       }
+      }
+      google.script.run.withSuccessHandler(onSuccessfunction).checkTestID(document.forms[0]);
+     }   
+        
+     //Delete report sheets
+     function deleteSheets(){
+      google.script.run.deleteSheetsGAS();
+     }
+
+  </script>
+</html>
+
+
+
+
