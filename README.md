@@ -12,7 +12,7 @@ NOTE: This tool is NOT support by Rigor--it is offered for free based on feedbac
 
 # Using
 
-1. Make a copy of Spreadsheet
+1. Make a copy of Spreadsheet (See how: http://recordit.co/va9ar1KiLK)
 
    https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpWvyw/edit?usp=sharing
 
