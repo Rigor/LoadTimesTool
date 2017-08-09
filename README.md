@@ -34,6 +34,7 @@ NOTE: This tool is NOT support by Rigor--it is offered for free based on feedbac
      0-24 hours: every run is returned;
      24 hours - 3 days: hourly rollups;
      Over 3 days: daily rollups
+     For more information, click here https://help.rigor.com/hc/en-us/articles/115004589167-How-to-View-Your-Data
 
 4. Deleting Sheets (See how: http://recordit.co/DnKIVI8fJh)
 
