@@ -26,7 +26,7 @@ NOTE: This tool is NOT support by Rigor--it is offered for free based on feedbac
    
    NOTE: The tool hits the https://monitoring-api.rigor.com/v2/checks/real_browsers/ API endpoint. The parameters can be edited in the      script to customize the tool. For more information on the Rigor API and available parameters, visit https://monitoring-api.rigor.com
 
-3. Grabbing the Check ID and running the tool (See how: http://recordit.co/KNio9QM3T4)
+3. Grabbing the Check ID and running the tool (See how: http://recordit.co/dPbnMQGS0r)
 
    Select the Check ID for the check you want to pull data for (Column A), and copy it into the sidebar where prompted. Then check the      checkboxes for the timings you want to pull data for. Finally, choose a timeframe for the data--if you select Custom, you will be        asked to select a From date and a To date. 
    
