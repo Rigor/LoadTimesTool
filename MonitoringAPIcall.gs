@@ -20,7 +20,7 @@ function getCheckDetails(form) {
     var sheet = ss.getSheets()[0];
     sheet.clear();
     //call API function to pull data
-    sheet.appendRow(['=ImportJSON("https:\/\/monitoring-api\.rigor\.com\/v2\/checks?type=real_browser&page=1&per_page=50&api_key=' + apikey + '", "\/checks")']);  
+    sheet.appendRow(['=ImportJSON("https:\/\/monitoring-api\.rigor\.com\/v2\/checks?type=real_browser&page=1&per_page=1000&api_key=' + apikey + '", "\/checks")']);  
     //copy the output as values
     var lastRow = sheet.getLastRow();
     var lastColumn = sheet.getLastColumn();
