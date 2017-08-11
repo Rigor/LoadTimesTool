@@ -12,9 +12,10 @@ NOTE: This tool is NOT support by Rigor--it is offered for free based on feedbac
 
 # Using
 
-1. Make a copy of Spreadsheet (See how: http://recordit.co/va9ar1KiLK)
+1. Make a copy of the spreadsheet:  
+https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpWvyw/edit?usp=sharing  
 
-   https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpWvyw/edit?usp=sharing
+![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_copy.gif?raw=true)
 
    The spreadsheet is shared read-only, so you'll first need to make a copy. This tool has not yet been verified by Google, so you          will have to provide authorization for the tool (follow the instructions on the spreadsheet)
 
