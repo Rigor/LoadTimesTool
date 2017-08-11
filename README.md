@@ -23,7 +23,6 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
 
 ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_api_key.gif?raw=true)  
 
-
    When the sidebar loads and after the script has been enabled, enter your API Key into the sidebar. You can find your API Key here:      https://monitoring.rigor.com//settings
    
    Once you have entered your API Key, click RUN to populate the spreadsheet with data for all RBCs in your account
@@ -31,6 +30,8 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
    NOTE: The tool hits the https://monitoring-api.rigor.com/v2/checks/real_browsers/ API endpoint. The parameters can be edited in the      script to customize the tool. For more information on the Rigor API and available parameters, visit https://monitoring-api.rigor.com
 
 3. Grabbing the Check ID and running the tool (See how: http://recordit.co/dPbnMQGS0r)
+
+![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_get_metrics.gif?raw=true)  
 
    Select the Check ID for the check you want to pull data for (Column A), and copy it into the sidebar where prompted. Then check the      checkboxes for the timings you want to pull data for. Finally, choose a timeframe for the data--if you select Custom, you will be        asked to select a From date and a To date. 
    
@@ -42,4 +43,6 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
 
 4. Deleting Sheets (See how: http://recordit.co/DnKIVI8fJh)
 
+   ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_delete.gif?raw=true)  
+   
    Everytime the tool is run, one new sheet will be added for each timing checked. Quickly delete all report sheets by clicking the        "Delete Reports" button at the bottom of the sidebar. NOTE: Do NOT delete the sheet titled "CHECKS_LIST"
