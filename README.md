@@ -19,7 +19,10 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
 
    The spreadsheet is shared read-only, so you'll first need to make a copy. This tool has not yet been verified by Google, so you will have to provide authorization for the tool (follow the instructions on the spreadsheet)
 
-2. Entering your API Key (See how: http://recordit.co/QlPtnoctBo)
+2. Entering your API Key 
+
+![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_api_key.gif?raw=true)  
+
 
    When the sidebar loads and after the script has been enabled, enter your API Key into the sidebar. You can find your API Key here:      https://monitoring.rigor.com//settings
    
