@@ -29,7 +29,7 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
    
    NOTE: The tool hits the https://monitoring-api.rigor.com/v2/checks/real_browsers/ API endpoint. The parameters can be edited in the      script to customize the tool. For more information on the Rigor API and available parameters, visit https://monitoring-api.rigor.com
 
-3. Grabbing the Check ID and running the tool (See how: http://recordit.co/dPbnMQGS0r)
+3. Grabbing the Check ID and running the tool
 
 ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_get_metrics.gif?raw=true)  
 
@@ -41,7 +41,7 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
      Over 3 days: daily rollups.
      For more information, click here https://help.rigor.com/hc/en-us/articles/115004589167-How-to-View-Your-Data
 
-4. Deleting Sheets (See how: http://recordit.co/DnKIVI8fJh)
+4. Deleting Sheets
 
 ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_delete.gif?raw=true)  
    
