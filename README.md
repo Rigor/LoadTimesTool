@@ -1,16 +1,16 @@
-# LoadTimesTool
+# Rigor Monitoring API Data Pull Tool
 
-Use Google Sheets to pull load time data from Rigor
+Use Google Sheets to pull load time data from Rigor.
 
-The tool uses your Rigor Monitoring API key to access your Real Browser Checks (RBCs). You can then pull relevant data by selecting a check based on Check ID, which load times to pull data for (server time, start render time, DOM load time, onload time, visually complete time, fully loaded time, or speed index), and a timeframe for the data.
+The tool uses your Rigor Monitoring API key to access your Real Browser Check (RBC) data. Using the appropriate Check ID, you can then pull the following metrics over a specified timeframe: Sserver Time, Start Render Time, DOM Load Time, Onload Time, Visually Complete Time, Fully Loaded Time, or Speed Index. In addition, you can select multiple Load Times simultaneously with each Load Time populating a new sheet.
 
-You can learn more about these timing metrics from Rigor's [Knowledge Base](https://help.rigor.com/hc/en-us/articles/115006741308-Performance-Metrics-Glossary).
+If you have questions about these timing metrics, please reference Rigor’s [Knowledge Base](https://help.rigor.com/hc/en-us/articles/115006741308-Performance-Metrics-Glossary).
 
 You can select multiple load times simultaneously, with each load time type populating a new sheet.
 
-NOTE: This tool is NOT support by Rigor--it is offered for free based on feedback from customers.
+NOTE: This tool is NOT supported by Rigor, rather it is offered for free based on feedback from customers.
 
-# Using
+# Using the Tool
 
 1. Make a copy of the spreadsheet:  
 https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpWvyw/edit?usp=sharing  
@@ -33,9 +33,10 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
 
 ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_get_metrics.gif?raw=true)  
 
-   Select the Check ID for the check you want to pull data for (Column A), and copy it into the sidebar where prompted. Then check the      checkboxes for the timings you want to pull data for. Finally, choose a timeframe for the data--if you select Custom, you will be        asked to select a From date and a To date. 
+   Select the Check ID for the check you want to pull data for (Column A) and copy it into the sidebar where prompted. Then, select the appropriate metrics you want to pull data for. Finally, choose a timeframe for the data. Note: if you select Custom, you will be asked to select a From Date and a To Date.
    
    NOTE: Timing data is rolled-up based on timeframe:
+   
      0-24 hours: every run is returned;
      24 hours - 3 days: hourly rollups;
      Over 3 days: daily rollups.
