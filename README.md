@@ -47,3 +47,7 @@ https://docs.google.com/spreadsheets/d/1YUC2SvU8utOHjRGtN-37s5p0kCQqSVRLiDY1RBpW
 ![Rigor Data Pull - Copy Spreadsheet](https://github.com/Rigor/LoadTimesTool/blob/master/images/data_pull_delete.gif?raw=true)  
    
    Everytime the tool is run, one new sheet will be added for each timing checked. Quickly delete all report sheets by clicking the        "Delete Reports" button at the bottom of the sidebar. NOTE: Do NOT delete the sheet titled "CHECKS_LIST"
+
+# License
+
+This software is licensed under the [MIT License](https://github.com/Rigor/LoadTimesTool/blob/master/LICENSE?raw=true).
